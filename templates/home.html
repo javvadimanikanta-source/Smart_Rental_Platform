@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Available Rentals</h2>
+{% if rentals %}
+    <ul>
+    {% for rental in rentals %}
+        <li><strong>{{ rental[1] }}</strong> - {{ rental[2] }} | Price: ${{ rental[3] }} | Owner: {{ rental[4] }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No rentals available. Add one now!</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Welcome {{ user }}</h2>
+
+<a href="{{ url_for('home') }}">View All Rentals</a> |
+<a href="{{ url_for('add_rental') }}">Add Rental</a> |
+<a href="{{ url_for('logout') }}">Logout</a>
+
+<hr>
+
+<h3>My Rentals</h3>
+
+{% if rentals %}
+    {% for rental in rentals %}
+        <div style="border:1px solid black; padding:10px; margin:10px;">
+            <h4>{{ rental[0] }}</h4>
+            <p>{{ rental[1] }}</p>
+            <p>₹ {{ rental[2] }}</p>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>You have not added any rentals yet.</p>
+{% endif %}
+
+{% endblock %}

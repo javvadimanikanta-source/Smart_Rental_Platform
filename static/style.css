@@ -1,0 +1,102 @@
+/* Basic body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+h1, h2, h3 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Navigation bar */
+nav {
+    text-align: center;
+    background-color: #2980b9;
+    padding: 10px;
+    border-bottom: 2px solid #1c5980;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Flash messages */
+.flash-messages li {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Forms */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1c5980;
+}
+
+/* Property list */
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+
+/* Dashboard links */
+a.button {
+    display: inline-block;
+    background-color: #27ae60;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+a.button:hover {
+    background-color: #1e8449;
+}

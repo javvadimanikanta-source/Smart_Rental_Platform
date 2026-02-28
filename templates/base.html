@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Rental Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Smart Rental</h1>
+
+    <a href="/">Home</a> |
+    <a href="/about">About</a> |
+    <a href="/contact">Contact</a> |
+    <a href="/login">Login</a> |
+    <a href="/register">Register</a>
+    <a href="{{ url_for('add_rental') }}">Add Rental</a>
+    <hr>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
